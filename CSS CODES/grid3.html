@@ -1,5 +1,60 @@
+<style>
+    body {
+        margin: 0;
+    }
+    .main-div {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto 3fr auto;
+        background-color: lightblue;
+        height: 100vh;
+    }
+
+    .header {
+        grid-column: 1/3;
+        background-color: lightgreen;
+        padding: 20px;
+    }
+
+    nav {
+        display: flex;gap: 20px;
+        justify-content: flex-start;
+    }
+
+    nav a {
+        text-decoration: none;
+    }
+
+    .footer {
+        grid-column: 1/3;
+        background-color: lightpink;
+    }
+
+    .aside {
+        background-color: aquamarine;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    .main {
+        background-color: lightgrey;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    article {
+        background-color: burlywood;
+        margin: 10px;
+        border-radius: 10px;
+        padding: 5px;height: 150px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+</style>
 <body>
-    <div class="main">
+    <div class="main-div">
         <div class="header">
             <nav>
                 <a href = "xyz">Home</a>
