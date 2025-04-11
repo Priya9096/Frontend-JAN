@@ -1,0 +1,35 @@
+<style>
+    .main-div {
+        height: 400px; width: 100vw;
+        border: 2px solid blue; 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid red;
+        width: 100px;height: 100px;
+    }
+
+    .ch1 {
+        flex-grow: 1;
+    }
+
+    .ch2 {
+        flex-grow: 2;
+    }
+
+</style>
+<body>
+    <div class="main-div">
+    <div class="child ch1"><p>Item1</p></div>
+    <div class="child ch2"><p>Itme2</p></div>
+    <div class="child"><p>Item3</p></div>
+    <div class="child"><p>Item4</p></div>
+    </div>
+</body>
